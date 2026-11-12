@@ -1,0 +1,22 @@
+The FYP design already matches DocuSign's standard tier. Adding per-investigator keys would take it to the AES-style tier, which is the step that gives true non-repudiation.
+DocuSign feature
+FYP equivalent
+Status
+Document hash + PKI tamper-evident seal
+SHA-256 on upload; KMS-signed log entries
+In design
+Envelope ID linking document and audit
+Case ID / evidence ID on every custody entry
+In design
+Signed Certificate of Completion
+Case PDF report, signed by the system key
+Add: sign the PDF report
+Third-party record retention
+S3 Object Lock (WORM) + hourly signed chain-head anchors
+In design
+Signer-held certificate (AES/QES)
+Per-investigator signing keys
+Stretch goal; promote to core for non-repudiation
+Electronic seal (organisation)
+System-level KMS signing key
+In design
